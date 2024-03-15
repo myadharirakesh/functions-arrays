@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function 1</title>
+</head>
+<body>
+    <script>
+      /*let uname=prompt("Enter uname"); 
+        let dom=prompt("Enter domain");
+        hello(uname,dom);
+        function hello(uname,dom)
+        {
+            document.write(`${uname} is working in ${dom} domain`);
+        }*/
+
+
+        /*function hello(username,domain)
+        {
+            document.write(`${username} is working in ${domain} domain`);
+        }
+        hello("Rakesh","SE"); */
+
+
+        let uname=prompt("Enter uname"); 
+        let dom=prompt("Enter domain");
+        let result=hello(uname,dom);
+        function hello(uname,dom)
+        {
+            return `${uname} is working in ${dom} domain`;
+        }
+        document.write(result);
+
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <script>
+        //map
+        let arr=[4,5,2,6,1,7,5];
+        let newarr=arr.map((i)=>i*2)
+        document.write(newarr+"<br>");
+
+        //filter
+        let arr1=[1,4,2,5,6,8];
+        let newarr1=arr1.filter((i)=>{
+            if(i%2==0){return i}
+        })
+        document.write(newarr1+"<br>");
+
+        //findIndex
+        let arr2=[2,4,3,1,5,33,66,22];
+        let newarr2=arr2.findIndex((i)=>i>20)
+        document.write("The position of element is:"+newarr2+"<br>");
+
+        //reduce
+        let arr4=[4,2,1,66,5,7,8,1];
+        let res=arr4.reduce((i,j)=>i+j)
+        document.write(res+"<br>")
+
+        let arr5=[4,2,1,66,5,7,8,1];
+        let res1=arr4.reduce((i,j)=>i+j,6)
+        document.write(res1+"<br>");
+
+        //indexOf
+
+        let arr6=[1,2,3,5,6,7,8];
+        let n=parseInt(prompt("Enter a number"));
+        document.write("The index of the array is :"+arr6.indexOf(n));
+
+    </script>
+</body>
+</html>

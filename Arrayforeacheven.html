@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[2,5,3,44,6,7,88,5,99];
+        let count=0;
+        arr.forEach((n)=>{
+            if(n%2==0)
+            count++;
+        })
+        document.write(`<br> total no. of even no.in array:${count}<br>`);
+
+
+
+
+        document.write(`Index values with array elements:<br>`)
+        let arr1=[1,4,2,5,6,77,55,66,8];
+        arr1.forEach((el,ind)=>{
+            document.write(`${ind} -> ${el}<br>`);
+        })
+
+
+        let arr2=[2,3,4,52,5,6,77];
+        arr2.forEach((el,ind)=>{
+            arr2[ind]=el*2;
+        })
+        document.write(arr2);
+    </script>
+</body>
+</html>

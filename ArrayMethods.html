@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array1</title>
+</head>
+<body>
+    <script>
+        let marvel=["Ironman","capt america","Thor","Hulk","Thanos"];
+        marvel.pop();// delet thanos
+        marvel.push("spider man");//add spiderman at last
+        marvel.shift()// delete ironman 
+        marvel.unshift("Bhaskara");//add Bhaskara at first*/
+        document.write(marvel+"<br>");
+
+        let marvel1=["Ironman","capt america","Thor","Hulk","Thanos"];
+        marvel1.splice(1,2,"Rakesh");
+        document.write(marvel1+"<br>")
+        marvel1.splice(0,0,"Bhai");
+        document.write(marvel1+"<br>");
+
+
+        let marvel2=["Ironman","capt america","Thor","Hulk","Thanos"];
+        let myhero=marvel2.slice(1,4);//it takes upto 4 only
+        document.write(myhero+"<br>");
+        
+
+        let marvel3=[4,1,5,22,12,6,25,7,88];
+        document.write(marvel3.sort()+"<br>"); // it sorts array using dictionary order
+
+        let marvel4=[2,5,6,12,55,29,994,99,45,32,44];
+        document.write(marvel4.sort((a,b)=>a-b)+"<br>");// a-b for ascending order
+        let number=[2,5,6,12,55,29,994,99,45,32,44];
+        document.write(number.sort((a,b)=>b-a)+"<br>");
+
+        let marvel5=["Ironman","Capt america","Thor","Hulk","Thanos"];
+        document.write(marvel5.sort()+"<br>");//ascending order
+
+        let marvel6=["Ironman","Capt america","Thor","Hulk","Thanos"];
+        document.write(marvel6.sort().reverse()+"<br>");//descending order
+
+        let marvel7=["Ironman","capt america","Thor","Hulk","Thanos"];
+        document.write(marvel7.join("-")+"<br>");
+
+        let marvel8=["Ironman","capt america","Thor","Hulk","Thanos"];
+        let dc=["batsman","superman","joker"];
+        let superheros=marvel8.concat(dc);
+        document.write(superheros)
+    </script>
+</body>
+</html>
